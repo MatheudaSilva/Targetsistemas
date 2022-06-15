@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX2 - Target</title>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        var num_a = 0, num_b = 1; // declaração de variáveis
+        document.write(num_a + " "); // escreve no documento o conteúdo da var num_a e após colocar um espaço
+        document.write(num_b); // escreve no documento o conreúdo da var num_b
+        for(var i=0;i<=10;i++) // indica que a var i começara em 0, e que acrescentará um número até que seja igual a 10 
+        {
+            var soma = num_a + num_b; // criação da var soma e atribuição a ela a soma de num a e num_b
+            num_a = num_b; // atribuição do atual valor de num_b para num_a
+            num_b = soma; // atribuição do atual valor de soma para num_b
+            document.write(" "+soma); // escreve no documento o valor de soma com um espaço entre cada valor 
+        }
+    </script>
+</body>
+</html>
